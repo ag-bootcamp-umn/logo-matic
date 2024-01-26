@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const fs = require("fs");
 const { Triangle, Square, Circle } = require('./lib/shapes.js')
 
 const prompts = [
@@ -28,11 +29,15 @@ const prompts = [
 function init() {
   const logoData = inquirer.prompt(prompts)
   .then(data => {
-    console.log('data pre-conditional', data);
+    // Validate User Input
     if (data.initials.length > 3 || data.initials.length < 1 ) {
       console.log('Invalid number of initials. Try again.')
     };
-
+    // Return data for processing
+    return data;
+  })
+  .then( data => {
+    // Get the bespoke text of the SVG file 
     let logo;
     switch (data.shape) {
       case "Triangle":
@@ -48,9 +53,18 @@ function init() {
       default: console.log('Error: no shape');
         break;
     }
+    return logo;
 
-    console.log(logo)
-    console.log(logo.generateSVG());
+  })
+  .then( logo => {
+    const svgText = logo.generateSVG();
+    fs.writeFile(
+      `examples/logo${logo.initials}.svg`,
+      svgText,
+      err => {
+        if (err) return console.log(err);
+      }
+    )
   });
 }
 
