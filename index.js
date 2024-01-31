@@ -48,7 +48,7 @@ function init() {
   
   })
   .then( data => {
-    // Get the bespoke text of the SVG file 
+    // Get bespoke text of the SVG file 
     const logoCode = getLogoCode(data);
     return logoCode;
 

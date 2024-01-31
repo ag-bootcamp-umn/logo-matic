@@ -19,15 +19,19 @@
   
   ## Usage
   Run the app from the terminal in the root directory. Use the command `node index.js` to begin then follow the prompts. The resulting svg will be generated in the "examples" directory.
+
+  ## Screenshots
+  ![App in use](./images/img1.png)
+  ![Final Product](./images/img2.png)
   
   ## How to Contribute
   Should you wish to contribute to this humble project, I would normally suggest that you reach out to me at the contact info below, and send a pull request. However, this is homework for a coding bootcamp, and I only wish to submit my own work.
   
   ## Tests
-  Tests are not available yet, but will be coming soon.
+  Open the terminal to the rood directory and run the command `npm run test`. This should make sure each shape subclass returns the correct data.
   
   ## Questions
-  email: [---](---)
+  email: [alexgeorgegeer@gmail.com](alexgeorgegeer@gmail.com)
   Github: [ag-bootcamp-umn](https://github.com/ag-bootcamp-umn)
 
   ## License
