@@ -28,7 +28,7 @@
   Should you wish to contribute to this humble project, I would normally suggest that you reach out to me at the contact info below, and send a pull request. However, this is homework for a coding bootcamp, and I only wish to submit my own work.
   
   ## Tests
-  Open the terminal to the rood directory and run the command `npm run test`. This should make sure each shape subclass returns the correct data.
+  Open the terminal to the root directory and run the command `npm run test`. This should make sure each shape subclass returns the correct data.
   
   ## Questions
   email: [alexgeorgegeer@gmail.com](alexgeorgegeer@gmail.com)
