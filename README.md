@@ -20,6 +20,9 @@
   ## Usage
   Run the app from the terminal in the root directory. Use the command `node index.js` to begin then follow the prompts. The resulting svg will be generated in the "examples" directory.
 
+  ## Video Walk-through
+  ### [Click to see a video walk-through of the app](https://drive.google.com/file/d/1idlCAa7duqXJflXk9TtyILsm-AW9v8QZ/view?usp=sharing)
+
   ## Screenshots
   ![App in use](./images/img1.png)
   ![Final Product](./images/img2.png)
